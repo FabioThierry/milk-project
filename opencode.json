@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "llamacpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama.cpp (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:1234/v1",
+        "apiKey": "local"
+      },
+      "models": {
+        "google/gemma-4-12b-qat": {
+          "name": "Gemma 4 12B QAT (local)",
+          "tool_call": true,
+          "limit": {
+            "context": 73000,
+            "output": 8192
+          }
+        }
+      }
+    }
+  },
+  "model": "llamacpp/google/gemma-4-12b-qat"
+}

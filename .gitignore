@@ -1,0 +1,19 @@
+# Dependências
+node_modules/
+
+# Build e saída de produção
+dist/
+dist-ssr/
+
+# Variáveis de ambiente locais
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
+Thumbs.db
